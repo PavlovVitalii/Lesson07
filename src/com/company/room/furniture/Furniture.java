@@ -1,4 +1,8 @@
-package com.company;
+package com.company.room.furniture;
+
+/**
+ * @author Pavlov Vitaliy
+ */
 
 public class Furniture {
 
