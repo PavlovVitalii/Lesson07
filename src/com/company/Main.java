@@ -4,6 +4,10 @@ import com.company.building.ApartmentHouse;
 import com.company.building.Building;
 import com.company.building.House;
 import com.company.building.TypeRoof;
+import com.company.musician.GuitarPlayer;
+import com.company.musician.MusicalInstruments;
+import com.company.musician.Musician;
+import com.company.musician.RockMusician;
 import com.company.room.appliances.Microwave;
 import com.company.room.appliances.Vacuum;
 import com.company.room.enums.FunctionMicrowave;
@@ -40,6 +44,19 @@ public class Main {
         System.out.println(building.toString());
         System.out.println(house.toString());
         System.out.println(apartmentHouse.toString());
+        System.out.println();
+
+        // задание 7.4
+        System.out.println();
+        Musician musician = new Musician(false);
+        RockMusician rockMusician = new RockMusician(true,"Monsters",
+                true,true);
+        GuitarPlayer guitarPlayer = new GuitarPlayer(true,"Tram-Tararam",
+                false,true, MusicalInstruments.DRUMS);
+
+        System.out.println(musician.toString());
+        System.out.println(rockMusician.toString());
+        System.out.println(guitarPlayer.toString());
     }
 
 }
