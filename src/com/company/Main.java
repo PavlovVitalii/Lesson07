@@ -1,5 +1,9 @@
 package com.company;
 
+import com.company.building.ApartmentHouse;
+import com.company.building.Building;
+import com.company.building.House;
+import com.company.building.TypeRoof;
 import com.company.room.appliances.Microwave;
 import com.company.room.appliances.Vacuum;
 import com.company.room.enums.FunctionMicrowave;
@@ -15,7 +19,8 @@ public class Main {
 
 
     public static void main(String[] args) {
-
+        Main main = new Main();
+        main.run();
     }
 
     private void run() {
@@ -26,7 +31,15 @@ public class Main {
         Human human2 = new Human("Виктор", 44, 77.5);
         human.run(human, human1, human2);
 
+        // задание 7.3
+        Building building = new Building(5.0, 5.0, 6.5, TypeRoof.PITCHED);
+        House house = new House(8.5, 12.5, 7.5, TypeRoof.FLAT, 7,2);
+        ApartmentHouse apartmentHouse = new ApartmentHouse(10.5, 25.00, 100,
+                TypeRoof.FLAT, 50, 1000);
 
+        System.out.println(building.toString());
+        System.out.println(house.toString());
+        System.out.println(apartmentHouse.toString());
     }
 
 }

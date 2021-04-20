@@ -23,13 +23,13 @@ public class House extends Building {
 
     @Override
     public String toString() {
-        return "House{" +
-                "width=" + width +
-                ", length=" + length +
-                ", height=" + height +
-                ", roof=" + roof +
-                ", numberRooms=" + numberRooms +
-                ", numberFloors=" + numberFloors +
-                '}';
+        return "House { " +
+                "width =  " + width +
+                ", length = " + length +
+                ", height = " + height +
+                ", roof = " + roof +
+                ", numberRooms = " + numberRooms +
+                ", numberFloors = " + numberFloors +
+                " }";
     }
 }

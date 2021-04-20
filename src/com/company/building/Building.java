@@ -20,11 +20,11 @@ public class Building {
 
     @Override
     public String toString() {
-        return "Building{" +
-                "width=" + width +
-                ", length=" + length +
-                ", height=" + height +
-                ", roof=" + roof +
-                '}';
+        return "Building { " +
+                "width = " + width +
+                ", length = " + length +
+                ", height = " + height +
+                ", roof = " + roof +
+                " }";
     }
 }

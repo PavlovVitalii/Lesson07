@@ -16,13 +16,13 @@ public class ApartmentHouse extends House {
 
     @Override
     public String toString() {
-        return "ApartmentHouse{" +
-                "numberApartments=" + numberApartments +
-                ", width=" + width +
-                ", length=" + length +
-                ", height=" + height +
-                ", roof=" + roof +
-                ", numberFloors=" + numberFloors +
-                '}';
+        return "ApartmentHouse { " +
+                "numberApartments = " + numberApartments +
+                ", width = " + width +
+                ", length = " + length +
+                ", height = " + height +
+                ", roof = " + roof +
+                ", numberFloors = " + numberFloors +
+                " }";
     }
 }
