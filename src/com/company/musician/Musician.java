@@ -22,7 +22,7 @@ public class Musician {
 
     @Override
     public String toString() {
-        return "Vusician { " +
+        return "Musician { " +
                 "ear = " + ear +
                 " }";
     }

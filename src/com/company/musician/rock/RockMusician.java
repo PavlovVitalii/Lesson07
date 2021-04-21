@@ -1,4 +1,6 @@
-package com.company.musician;
+package com.company.musician.rock;
+
+import com.company.musician.Musician;
 
 /**
  * @author Pavlov Vitaliy
@@ -28,6 +30,6 @@ public class RockMusician extends Musician {
         return "RockMusician { " +
                 "nameBand = '" + nameBand + '\'' +
                 ", rock = '" + rock + '\'' +
-                " }";
+                "  }";
     }
 }

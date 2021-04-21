@@ -1,10 +1,13 @@
-package com.company.musician;
+package com.company.musician.rock;
+
+import com.company.musician.MusicalInstruments;
+import com.company.musician.rock.RockMusician;
 
 /**
  * @author Pavlov Vitaliy
  */
 
-public class GuitarPlayer extends RockMusician{
+public class GuitarPlayer extends RockMusician {
 
     MusicalInstruments instrument;
 

@@ -1,19 +1,16 @@
 package com.company;
 
-import com.company.building.ApartmentHouse;
-import com.company.building.Building;
-import com.company.building.House;
-import com.company.building.TypeRoof;
-import com.company.musician.GuitarPlayer;
+import com.company.building.*;
+import com.company.musician.jazz.ContraBassPlayer;
+import com.company.musician.jazz.JazzMusician;
+import com.company.musician.jazz.Saxophonist;
+import com.company.musician.jazz.Trumpeter;
+import com.company.musician.rock.BassGuitarPlayer;
+import com.company.musician.rock.Drummer;
+import com.company.musician.rock.GuitarPlayer;
 import com.company.musician.MusicalInstruments;
 import com.company.musician.Musician;
-import com.company.musician.RockMusician;
-import com.company.room.appliances.Microwave;
-import com.company.room.appliances.Vacuum;
-import com.company.room.enums.FunctionMicrowave;
-import com.company.room.enums.ManufactureVacuum;
-import com.company.room.enums.ManufacturerMicrowave;
-import com.company.room.enums.TypeVacuum;
+import com.company.musician.rock.RockMusician;
 
 /**
  * @author Pavlov Vitaliy
@@ -37,10 +34,15 @@ public class Main {
 
         // задание 7.3
         Building building = new Building(5.0, 5.0, 6.5, TypeRoof.PITCHED);
-        House house = new House(8.5, 12.5, 7.5, TypeRoof.FLAT, 7,2);
+        House house = new House(8.5, 12.5, 7.5, TypeRoof.FLAT, 7, 2);
         ApartmentHouse apartmentHouse = new ApartmentHouse(10.5, 25.00, 100,
                 TypeRoof.FLAT, 50, 1000);
+        School school = new School(10, 20, 20, TypeRoof.PITCHED, 40);
+        NurserySchool nurserySchool = new NurserySchool(30, 60, 30,
+                TypeRoof.FLAT, 30, 20, 15);
 
+        System.out.println(school.toString());
+        System.out.println(nurserySchool.toString());
         System.out.println(building.toString());
         System.out.println(house.toString());
         System.out.println(apartmentHouse.toString());
@@ -49,14 +51,29 @@ public class Main {
         // задание 7.4
         System.out.println();
         Musician musician = new Musician(false);
-        RockMusician rockMusician = new RockMusician(true,"Monsters",
-                true,true);
-        GuitarPlayer guitarPlayer = new GuitarPlayer(true,"Tram-Tararam",
-                false,true, MusicalInstruments.DRUMS);
+        RockMusician rockMusician = new RockMusician(true, "Monsters",
+                true, true);
+        GuitarPlayer guitarPlayer = new GuitarPlayer(true, "Tram-Tararam",
+                false, true, MusicalInstruments.RITM_GUITAR);
+        Drummer drummer = new Drummer(true, "Monsters", true, true);
+        BassGuitarPlayer bassGuitarPlayer = new BassGuitarPlayer(true, "Monsters",
+                true, true);
+        JazzMusician jazzMusician = new JazzMusician(true, "JazzBand");
+        ContraBassPlayer contraBassPlayer = new ContraBassPlayer(true, "JazzBand");
+        Saxophonist saxophonist = new Saxophonist(true, "jazzBand");
+        Trumpeter trumpeter = new Trumpeter(true, "jazzBand");
 
         System.out.println(musician.toString());
         System.out.println(rockMusician.toString());
         System.out.println(guitarPlayer.toString());
+        System.out.println(bassGuitarPlayer.toString());
+        System.out.println(drummer.toString());
+        System.out.println();
+        System.out.println();
+        System.out.println(jazzMusician.toString());
+        System.out.println(saxophonist.toString());
+        System.out.println(trumpeter.toString());
+        System.out.println(contraBassPlayer.toString());
     }
 
 }

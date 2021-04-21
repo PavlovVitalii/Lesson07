@@ -7,5 +7,8 @@ package com.company.musician;
 public enum MusicalInstruments {
     DRUMS,
     RITM_GUITAR,
-    BAS_GUITAR
+    BAS_GUITAR,
+    SAXOPHONE,
+    CONTRABASS,
+    TRUMPET
 }
